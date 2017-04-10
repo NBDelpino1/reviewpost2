@@ -53,22 +53,37 @@ footer.page-footer {
 }
 
 
-.btn-blue {
+.btn-main {
     text-transform: none;
     /*background-color: #4386fc;*/
-
-    background-color: #ff5a5f;
-
+    background-color: #ff5a5f !important;
     width:220px;
 }
 
-h1 {
-    font-size:20px !important;
+.btn-main:hover {
+    background-color:#ce494d !important;
+}
+
+.btn-main:focus {
+    background-color: #ff5a5f !important;
+}
+
+.btn-save-an-article {
+    text-transform: none;
+    background-color: #4386fc;
+    width:220px;
+}
+
+
+.logo-header {
     font-style: italic;
     font-weight:700;
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
 }
+
+
+
 
 
 
