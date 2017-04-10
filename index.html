@@ -18,64 +18,11 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
     <!-- Template styles -->
-    <style rel="stylesheet">
-        /* TEMPLATE STYLES */
-        /* Necessary for full page carousel*/
-        
-        html,
-        body,
-        .view {
-            height: 100%;
-            width: 100%;
-        }
-        /* Navigation*/
-        
-        .navbar {
-            background-color: transparent;
-        }
-        
-        .scrolling-navbar {
-            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-            transition: background .5s ease-in-out, padding .5s ease-in-out;
-        }
-        
-        .top-nav-collapse {
-            background-color: #1C2331;
-        }
-        
-        footer.page-footer {
-            background-color: #1C2331;
-            margin-top: 0;
-        }
-        
-        @media only screen and (max-width: 768px) {
-            .navbar {
-                background-color: #1C2331;
-            }
-        }
-        /* Carousel*/
-        
-        .carousel,
-        .carousel-item,
-        .active {
-            height: 100%;
-        }
-        
-        .carousel-inner {
-            height: 100%;
-        }
-        
-        .flex-center {
-            color: #fff;
-        }
-        
-        .carousel-caption {
-            height: 100%;
-            padding-top: 7rem;
-        }
-    </style>
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -89,26 +36,23 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <strong>Navbar</strong>
+                <img src="logo-small.png">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav1">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Features</a>
+                        <a class="nav-link">New Articles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">About</a>
+                        <a class="nav-link">Saved Articles</a>
                     </li>
                 </ul>
-                <form class="form-inline waves-effect waves-light">
-                    <input class="form-control" type="text" placeholder="Search">
-                </form>
+                <!--<form class="form-inline waves-effect waves-light">-->
+                    <!--<input class="form-control" type="text" placeholder="Search">-->
+                <!--</form>-->
             </div>
         </div>
     </nav>
@@ -134,7 +78,7 @@
                     <!--Video source-->
                     <video class="video-full" autoplay loop>
                         <!--<source src="http://mdbootstrap.com/images/video/Tropical.mp4" type="video/mp4" />-->
-                        <source src="macbook.mp4" type="video/mp4" />
+                        <source src="office.mp4" type="video/mp4" />
                     </video>
                     <div class="full-bg-img"></div>
                 </div>
@@ -143,15 +87,15 @@
                 <div class="carousel-caption">
                     <div class="flex-center animated fadeIn">
                         <ul>
-                            <li><img src="google.png"></li>
+                            <li><img src="logo5.png"></li>
                             <li>
                                 <h1 class="h1-responsive">Reviewpost</h1></li>
                             <li>
                                 <p>Pull News Articles Off the New York Times Website, Make Notes and Delete When Done</p>
                             </li>
                             <li>
-                                <a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg" rel="nofollow">Get Articles</a>
-                                <a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default btn-lg" rel="nofollow">Saved Articles</a>
+                                <a href="#" class="btn btn-primary btn-lg btn-blue scrape-new" rel="nofollow">New Articles</a>
+                                <a href="/saved" class="btn btn-primary btn-lg btn-blue" rel="nofollow">Saved Articles</a>
                             </li>
                         </ul>
                     </div>
@@ -166,23 +110,25 @@
                 <div class="view hm-black-light">
                     <!--Video source-->
                     <video class="video-full" autoplay loop>
-                        <source src="http://mdbootstrap.com/images/video/Sail-Away.mp4" type="video/mp4" />
+                        <!--<source src="http://mdbootstrap.com/images/video/Sail-Away.mp4" type="video/mp4" />-->
+                        <source src="newyork.mp4" type="video/mp4" />
                     </video>
-                    <div class="mask"></div>
+                    <!--<div class="mask"></div>-->
                 </div>
 
                 <!--Caption-->
                 <div class="carousel-caption">
                     <div class="flex-center animated fadeIn">
                         <ul>
+                            <li><img src="logo5.png"></li>
                             <li>
                                 <h1 class="h1-responsive">Reviewpost</h1></li>
                             <li>
                                 <p>Pull News Articles Off the New York Times Website, Make Notes and Delete When Done</p>
                             </li>
                             <li>
-                                <a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg" rel="nofollow">Get Articles</a>
-                                <a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default btn-lg" rel="nofollow">Saved Articles</a>
+                                <a href="#" class="btn btn-primary btn-lg btn-blue scrape-new" rel="nofollow">New Articles</a>
+                                <a href="/saved" class="btn btn-primary btn-lg btn-blue" rel="nofollow">Saved Articles</a>
                             </li>
                         </ul>
                     </div>
@@ -197,7 +143,8 @@
                 <div class="view hm-black-strong">
                     <!--Video source-->
                     <video class="video-full" autoplay loop>
-                        <source src="http://mdbootstrap.com/images/video/Agua-natural.mp4" type="video/mp4" />
+                        <!--<source src="http://mdbootstrap.com/images/video/Agua-natural.mp4" type="video/mp4" />-->
+                        <source src="reading.mp4" type="video/mp4" />
                     </video>
                     <div class="mask"></div>
                 </div>
@@ -206,14 +153,15 @@
                 <div class="carousel-caption">
                     <div class="flex-center animated fadeIn">
                         <ul>
+                            <li><img src="logo5.png"></li>
                             <li>
                                 <h1 class="h1-responsive">Reviewpost</h1></li>
                             <li>
                                 <p>Pull News Articles Off the New York Times Website, Make Notes and Delete When Done</p>
                             </li>
                             <li>
-                                <a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-primary btn-lg" rel="nofollow">Get Articles</a>
-                                <a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default btn-lg" rel="nofollow">Saved Articles</a>
+                                <a href="#" class="btn btn-primary btn-lg btn-blue scrape-new" rel="nofollow">New Articles</a>
+                                <a href="/saved" class="btn btn-primary btn-lg btn-blue" rel="nofollow">Saved Articles</a>
                             </li>
                         </ul>
                     </div>
@@ -238,6 +186,21 @@
     <!--/.Carousel Wrapper-->
 
     <!--/.Main layout-->
+
+
+
+
+
+
+<div class="tester">
+
+    <a href="#" class="btn btn-primary btn-lg btn-blue scrape-new" rel="nofollow">New Articles</a>
+    <a href="/saved" class="btn btn-primary btn-lg btn-blue" rel="nofollow">Saved Articles</a>
+</div>
+
+
+
+
 
 
 
