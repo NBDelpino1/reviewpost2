@@ -53,20 +53,40 @@ footer.page-footer {
 }
 
 
+/*.btn-main {*/
+    /*text-transform: none;*/
+    /*!*background-color: #4386fc;*!*/
+    /*background-color: #ff5a5f !important;*/
+    /*width:220px;*/
+/*}*/
+
+/*.btn-main:hover {*/
+    /*background-color:#ce494d !important;*/
+/*}*/
+
+/*.btn-main:focus {*/
+    /*background-color: #ff5a5f !important;*/
+/*}*/
+
+
+
 .btn-main {
     text-transform: none;
-    /*background-color: #4386fc;*/
-    background-color: #ff5a5f !important;
+    border-radius:0;
+    background-color: #4386fc !important;
     width:220px;
 }
 
 .btn-main:hover {
-    background-color:#ce494d !important;
+    background-color:#2857a9 !important;
 }
 
 .btn-main:focus {
-    background-color: #ff5a5f !important;
+    background-color: #4386fc !important;
 }
+
+
+
 
 .btn-save-an-article {
     text-transform: none;
